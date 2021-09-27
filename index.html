@@ -3,25 +3,31 @@
     <head>
         <meta charset="UTF-8">
         <title>JS Photo Carrousel</title>
+        
         <link rel="stylesheet" href="./styles.css">
+        <script src="https://kit.fontawesome.com/16141199bf.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div class="carrousel">
-            <div class="carrousel-item carousel-item-visible">
-                <img src="images/1.jpg" alt="">
+            <div class="carrousel-item carrousel-item-visible">
+                <img class="carrousel-item-img" src="img/1.jpg" alt="">
             </div>
             
             <div class="carrousel-item">
-                <img src="images/2.jpg" alt="">
+                <img class="carrousel-item-img" src="img/2.jpg" alt="">
             </div>
             
             <div class="carrousel-item">
-                <img src="images/3.jpg" alt="">
+                <img class="carrousel-item-img" src="img/3.jpg" alt="">
             </div>
             
             <div class="carrousel-actions">
-                <button class="carrousel-btn-prev" aria-label="Previous slide"><</button>
-                <button class="carrousel-btn-next" aria-label="Next slide">></button>
+                <button class="btn btn-carrousel" id="carrousel-btn-prev" aria-label="Previous slide">
+                    <i class="fas fa-angle-left"></i>
+                </button>
+                <button class="btn btn-carrousel" id="carrousel-btn-next" aria-label="Next slide">
+                    <i class="fas fa-angle-right"></i>
+                </button>
             </div>
         </div>
 
