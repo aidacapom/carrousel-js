@@ -41,6 +41,7 @@ img {
 
 .carrousel-item-visible {
     display: block;
+    animation: fadeVisibility 0.5s;
 }
 
 .carrousel-actions {
@@ -66,6 +67,18 @@ img {
 
 .fa-angle-right {
     padding-left: .15rem;
+}
+
+/* ANIMATIONS */
+
+@keyframes fadeVisibility {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 /* MEDIA QUERIES */
