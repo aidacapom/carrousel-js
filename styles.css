@@ -20,22 +20,6 @@ img {
     font-size: 2rem;
 }
 
-.btn-carrousel {
-    background-color: #fff;
-    border-radius: 50%;
-    width: 2.5rem;
-    height: 2.5rem;
-}
-
-.fa-angle-left {
-    padding-right: .15rem;
-}
-
-.fa-angle-right {
-    padding-left: .15rem;
-}
-
-
 .carrousel {
     margin: 0 auto;
     max-width: 700px;
@@ -69,4 +53,30 @@ img {
     transform: translateY(-50%);
 }
 
+.btn-carrousel {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+}
 
+.fa-angle-left {
+    padding-right: .15rem;
+}
+
+.fa-angle-right {
+    padding-left: .15rem;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+    .carrousel {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .carrousel-item-img {
+        border-radius: 0;
+    }
+}
