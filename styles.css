@@ -20,6 +20,25 @@ img {
     font-size: 2rem;
 }
 
+.btn-carrousel {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.btn-carrousel:hover {
+    background-color: rgba(255, 255, 255, .75);
+}
+
+.fa-angle-left {
+    padding-right: .15rem;
+}
+
+.fa-angle-right {
+    padding-left: .15rem;
+}
+
 .carrousel {
     margin: 0 auto;
     max-width: 700px;
@@ -52,21 +71,6 @@ img {
     left: 3%;
     right: 3%;
     transform: translateY(-50%);
-}
-
-.btn-carrousel {
-    background-color: #fff;
-    border-radius: 50%;
-    width: 2.5rem;
-    height: 2.5rem;
-}
-
-.fa-angle-left {
-    padding-right: .15rem;
-}
-
-.fa-angle-right {
-    padding-left: .15rem;
 }
 
 /* ANIMATIONS */
