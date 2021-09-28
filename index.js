@@ -2,6 +2,7 @@
 const slides = document.getElementsByClassName("carrousel-item")
 let slidePosition = 0
 const totalSlides = slides.length
+const colorThief = new ColorThief()
 
 /* EVENT LISTENERS */
 document.getElementById("carrousel-btn-prev").addEventListener("click", function() {
@@ -48,4 +49,22 @@ function moveSlide(direction) {
     }
 
     showCurrentSlide()
+    getDominantColor()
+}
+
+function changeBGColor(color) {
+    document.body.style.background = `linear-gradient(to bottom right, rgb(15, 15, 15) 50%, rgb(${color[0]}, ${color[1]}, ${color[2]}))`
+}
+
+function getDominantColor() {
+    const img = document.querySelector('.carrousel-item-visible .carrousel-item-img')
+
+    // Make sure image is finished loading
+    if (img.complete) {
+        changeBGColor(colorThief.getColor(img))
+    } else {
+        img.addEventListener('load', function() {
+            changeBGColor(colorThief.getColor(img))
+        });
+    }
 }
